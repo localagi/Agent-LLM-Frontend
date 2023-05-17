@@ -18,6 +18,5 @@ jobs:
     with:
       registry-dockerhub-enable: false
       push: ${{ github.event_name != 'pull_request' }}
-      platforms: linux/amd64,linux/arm64/v8
     secrets:
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
